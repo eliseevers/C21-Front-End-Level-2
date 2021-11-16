@@ -13,14 +13,52 @@ html{
     font-family: 'Source Sans Pro', sans-serif;
     font-style:normal;
     font-size: 16px;
-    color: #5a5150;
+    color: gray;
     line-height:1.8;
+}
+
+body{
+    background-color:lightgray;
+
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width:1750px;
+    background-color:white ;
+    padding: 0 40px;
+}
+
+header{
+    height: 90px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo{
+
+}
+
+.main-menu{
+    list-style: none;
+    color:grey;
+}
+
+.socials{
+    list-style: none;
+    color:grey;
+}
+
+li.menu-items a{
+    color:grey ;   
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Karla', sans-serif;
     font-style:normal;
-    color:#4e4b4b;
+    color:grey;
     line-height:1.4;  
 }
 
@@ -35,13 +73,13 @@ h3{
 
 h4{
     font-size:16px;
-    color:#919291
+    color:grey
 }
 
 a{
     font-family: 'Karla', sans-serif;
     font-size:14px;
-    color:#ca404f;
+    color:red;
     line-height:1.4;
     text-decoration: none;
 }
@@ -51,7 +89,25 @@ button{
     font-size: 16px;
     color:white;
     line-height:42px;
-    background-color:#ca404f;
+    background-color:red;
 }
 
+main{
+    padding: 0 60px 0 60px;
 
+}
+
+.recepten{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.recept{
+    width:1040px;
+}
+
+.recept-items{
+    width: 485px;
+}
