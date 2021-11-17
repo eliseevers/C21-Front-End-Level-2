@@ -13,7 +13,7 @@ html{
     font-family: 'Source Sans Pro', sans-serif;
     font-style:normal;
     font-size: 16px;
-    color: gray;
+    color:#4e4b4b;
     line-height:1.8;
 }
 
@@ -26,7 +26,6 @@ body{
     margin: 0 auto;
     max-width:1750px;
     background-color:white ;
-    padding: 0 40px;
 }
 
 header{
@@ -35,30 +34,59 @@ header{
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    padding: 0 40px;
 }
 
 .logo{
-
+    margin-top: 10px;
 }
 
-.main-menu{
+ul.main-menu{
     list-style: none;
-    color:grey;
+    color: #4e4b4b;
 }
 
-.socials{
+ul.socials{
     list-style: none;
-    color:grey;
+    color:#4e4b4b;
+    
 }
 
-li.menu-items a{
-    color:grey ;   
+li.menu-item a{
+    color:#4e4b4b ;   
 }
+
+li.menu-item a:hover{
+    color:#ca404f ;   
+}
+
+li.menu-item{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+li.menu-item::after{
+    content: " | ";
+    padding-left: 10px;
+    color: #eaeaea;
+}
+
+li.social-item a{
+    color:#4e4b4b;
+    }
+li.social-item{
+    display: inline-block;
+    padding-right: 15px;
+    }
+    li.social-item a:hover{
+        color:#ca404f;
+    }    
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Karla', sans-serif;
     font-style:normal;
-    color:grey;
+    color:#4e4b4b;
     line-height:1.4;  
 }
 
@@ -73,13 +101,13 @@ h3{
 
 h4{
     font-size:16px;
-    color:grey
+    color:lightgray;
 }
 
 a{
     font-family: 'Karla', sans-serif;
     font-size:14px;
-    color:red;
+    color:#ca404f;
     line-height:1.4;
     text-decoration: none;
 }
@@ -89,25 +117,74 @@ button{
     font-size: 16px;
     color:white;
     line-height:42px;
-    background-color:red;
+    height: 42px;
+    background-color:#ca404f;
+    padding: 0 20px;
+    border: none;
 }
 
 main{
-    padding: 0 60px 0 60px;
-
+    padding: 0 60px 40px 60px;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .recepten{
     width: 100%;
     display: flex;
     flex-direction: row;
-
+    justify-content: space-between;
 }
 
 .recept{
     width:1040px;
+    display: flex;
+}
+
+.description{
+    width:485px;
+    margin-right: 70px;
+    color
+}
+
+.description h4{
+    margin-top: 15px;
+ }
+
+description p{
+    margin: 60px 0;
 }
 
 .recept-items{
     width: 485px;
+}
+
+.recept-items .item{
+    display: grid;
+    grid-template-columns: auto 100px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+}
+
+.recept-items .item:hover{
+    background-color:#eaeaea ;
+    padding-left: 10px;
+}
+
+.item-tekst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.recept-image img{
+    width: 485px;
+    margin-top: 40px;
+}
+
+.afbeelding1{
+    margin-top: 10px;
 }
